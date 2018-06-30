@@ -19,6 +19,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -26,15 +27,15 @@
  <header>
  	 <div class="container">
  		 <div class="row">
- 		 	  <div class="col-7">
- 	  		   <img src="img/фото.png" alt="IMac" class="header-img">
+ 		 	  <div class="col-lg-7">
+ 	  		   <img src="img/фото.png" alt="IMac" class="header-img animated fadeInLeftBig">
               </div>
-              <div class="col-5">
-        	  <p class="header-pretitle">Веб-программист</p>
-        	  <h1 class="header-title">Руслан Пархомчук(я)</h1>
-        	  <p class="header-subtitle">Умею верстань на HTML/CSS<br>(При этом учу ещё и бекенд-разработку)</p>
+              <div class="col-lg-5">
+        	  <p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-программист</p>
+        	  <h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Руслан Пархомчук(я)</h1>
+        	  <p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Умею верстань на HTML/CSS<br>(При этом учу ещё и бекенд-разработку)</p>
         	     <div class="header-button-block">
-        	      <a class="header-button" href="https://vk.com/parkhom4uk">Связаться</a>
+        	      <a class="header-button wow fadeInRightBig" data-wow-delay="0.4s" href="https://vk.com/parkhom4uk">Связаться</a>
         	      <small>*Это бесплатно</small>
         	     </div>
               </div>
@@ -44,7 +45,7 @@
  </header>
  <section class="portfolio">
  	<div class="container">
- 		 <div class="portfolio-block">
+ 		 <div class="portfolio-block wow fadeIn">
  		    <h2 class="portfolio-title">Портфолио</h2>
  		    <p class="portfolio-subtitle">Мои работы</p>
  		     <div class="row">
@@ -81,10 +82,10 @@
 	 		     <div class="col-md-4">
 	 		  	     <div class="social-block">
 	 		  	     	 <p>Подпишитесь:</p>
-	 		  	     	 <a href="https://www.facebook.com/profile.php?id=100013518915321"><img src="img/Соц сети/facebook-logo-button.png" alt="Фейсбук"></a>
-	 		  	     	 <a href="https://vk.com/parkhom4uk"><img src="img/Соц сети/vk-social-logotype.png" alt="Вконтакте"></a>
-	 		  	     	 <a href="https://web.telegram.org/#/im"><img src="img/Соц сети/telegram-symbol.png" alt="Телеграм"></a>
-	 		  	     	 <a href="https://www.youtube.com/channel/UCTThHgh6EaJxiYzZ2PWsAXg?view_as=subscriber"><img src="img/Соц сети/youtube-symbol.png" alt="Ютуб"></a>
+	 		  	     	 <a href="https://www.facebook.com/profile.php?id=100013518915321"><img class="wow bounceInUp" data-wow-delay="0,1s" src="img/Соц сети/facebook-logo-button.png" alt="Фейсбук"></a>
+	 		  	     	 <a href="https://vk.com/parkhom4uk"><img class="wow bounceInUp" data-wow-delay="0.2s" src="img/Соц сети/vk-social-logotype.png" alt="Вконтакте"></a>
+	 		  	     	 <a href="https://web.telegram.org/#/im"><img class="wow bounceInUp" data-wow-delay="0.3s" src="img/Соц сети/telegram-symbol.png" alt="Телеграм"></a>
+	 		  	     	 <a href="https://www.youtube.com/channel/UCTThHgh6EaJxiYzZ2PWsAXg?view_as=subscriber"><img class="wow bounceInUp" data-wow-delay="0.4s" src="img/Соц сети/youtube-symbol.png" alt="Ютуб"></a>
 	 		  	     </div>
 	 		     </div>
 	 		     <div class="col-md-4">
@@ -96,5 +97,9 @@
 	 	 </div>
 	 </div>
 </footer>
+      <script src="js/wow.min.js"></script>
+      <script>
+      	new WOW().init();
+      </script>
 </body>
 </html>
